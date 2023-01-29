@@ -57,3 +57,6 @@ style = "white"
 [cmd_duration]
 format = "[❯ $duration]($style)"
 style = "bright-yellow"
+
+[aws]
+disabled = true

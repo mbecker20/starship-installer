@@ -2,6 +2,8 @@
 
 sh $HOME/starship-installer/install-fira-code.sh
 
+mkdir -p $HOME/.starship/bin
+
 curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir $HOME/.starship/bin
 
 if ! grep ".starship/bin" $HOME/.bashrc > /dev/null; then 

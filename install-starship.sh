@@ -7,7 +7,7 @@ mkdir -p $HOME/.starship/bin
 curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir $HOME/.starship/bin
 
 if ! grep ".starship/bin" $HOME/.bashrc > /dev/null; then 
-	echo 'export PATH=$HOME/.starship/bin:\$PATH' >> $HOME/.bashrc
+	echo 'export PATH=$HOME/.starship/bin:$PATH' >> $HOME/.bashrc
 fi
 
 if ! grep "STARSHIP_CONFIG" $HOME/.bashrc > /dev/null; then 

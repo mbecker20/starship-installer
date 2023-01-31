@@ -16,9 +16,9 @@ if ! grep ".starship/bin" $HOME/.zshrc > /dev/null; then
 	echo 'path+=("$HOME/.starship/bin")' >> $HOME/.zshrc
 fi
 
-if ! grep "starship init zsh" $HOME/.bashrc > /dev/null; then
-	echo "" >> $HOME/.bashrc
-	echo 'eval "$(starship init zsh)"' >> $HOME/.bashrc
+if ! grep "starship init zsh" $HOME/.zshrc > /dev/null; then
+	echo "" >> $HOME/.zshrc
+	echo 'eval "$(starship init zsh)"' >> $HOME/.zshrc
 fi
 
 if ! test -f "$HOME/.starship/starship.toml"; then

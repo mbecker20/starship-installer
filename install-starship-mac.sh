@@ -6,6 +6,10 @@ mkdir -p $HOME/.starship/bin
 
 curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir $HOME/.starship/bin
 
+if ! test -f "$HOME/.zshrc" > /dev/null; then
+	touch $HOME/.zshrc
+fi
+
 if ! grep "STARSHIP_CONFIG" $HOME/.zshrc > /dev/null; then
 	echo "" >> $HOME/.zshrc
 	echo 'export STARSHIP_CONFIG=$HOME/.starship/starship.toml' >> $HOME/.zshrc

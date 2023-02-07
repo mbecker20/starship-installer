@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sh $HOME/starship-installer/install-fira-code.sh
+sh $HOME/starship-installer/install-fira-code-ubuntu.sh
 
 mkdir -p $HOME/.starship/bin
 

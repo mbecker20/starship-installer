@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sh $HOME/starship-installer/install-fira-code-ubuntu.sh
-
 mkdir -p $HOME/.starship/bin
 
 curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir $HOME/.starship/bin

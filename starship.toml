@@ -2,11 +2,11 @@
 
 add_newline = true
 
-format = "$time$hostname$memory_usage$all"
+format = "$time$hostname$container$memory_usage$all"
 
 [character]
 success_symbol = "[❯](bright-blue bold)"
-error_symbol = "[❯](bright-blue bold)"
+error_symbol = "[❯](bright-red bold)"
 
 [package]
 disabled = true
@@ -57,6 +57,10 @@ style = "white"
 [cmd_duration]
 format = "[❯ $duration]($style)"
 style = "bright-yellow"
+
+[container]
+format = "[❯ in container ]($style)"
+style = "bright-green"
 
 [aws]
 disabled = true
